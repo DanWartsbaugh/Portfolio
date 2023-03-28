@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+}
+.all{
+    margin:0 auto;
+    text-align:center;
+}
+/*Screen size adjustments*/
+@media only screen and (max-width: 550px){
+    .s-1 {
+        width:100%
+    }
+    .links{
+        display:none;
+    }
+}
+
+@media only screen and (min-width:551px){
+.m-2{
+    width:60%;
+}
+.all{
+    display:flex;
+    justify-content:center;
+}
+
+.dropdown{
+    display:none;
+}
+
+.sidebar{
+    width:280px;
+    height:100%;
+    position:sticky;
+    top:0;
+}
+
+
+
+}
+
+@media only screen and (min-width:1200px){
+.L-1{
+    width:20%;
+}
+.L-3{
+    width:60%;
+}
+.sidebar{
+    width:280px;
+}
+}
+
+/*END SCREEN SIZE ADJUSTMENT PORTION*/
+
+.dropdown{
+    position:fixed;
+    top:8px;
+    left:8px;
+}
+
+.sidebar{
+    background-color:yellow;
+}
+
+main *{
+    margin-left:10px;
+}
+
+.prof{
+    margin-top:20%;
+}
+
+.prof img{
+    margin-top:10%;
+    margin-bottom:8%;
+    width:60%;
+    border-radius:50%;
+}
+
+h3{}
+
+h4{}
+
+.links{
+    margin-top:20%;
+    margin-left:0 px;
+    list-style:none;
+    padding:0px;
+}
+
+.icons{}
+
+.about{
+    background-color:blue;
+
+}
+
+.techs{
+    background-color:red;
+    height:200px;
+}
+
+.techs img{
+    height:80%;
+}
+
+.edu{
+    background-color:orange;
+}
+
+.school{
+    text-align:left;
+}
+
+.bio{
+    background-color:green;
+}
+
+.exp{
+    background-color:gray;
+
+}
+
+.projects{
+    background-color:brown
+}
+
+.proj{}
+
+.contact{
+    background-color:cornflowerblue;
+    height:280px;
+}
+
+.contact-sections{
+    height:240px;
+    display:flex;
+    justify-content:space-around;
+    align-items:space-around;
+}
+
+.contact-left{
+    height:140px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin-top:10px;
+    /* margin-bottom:10px; */
+}
+
+#message{
+    width:60%;
+    height:200px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+text{}
+
+textarea{}
+

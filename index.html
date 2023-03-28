@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Sidebar: 100% of screen in small view, 25% in medium, 20% in large -->
+    <!-- Sidebar: 1 div for image, name, and description.
+    Sidebar: 1 div for links to page sections.
+    Sidebar: 1 div for icons. -->
+    <div class="all">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg> </button>
+            <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">About Me</button></li>
+                <li><button class="dropdown-item" type="button">Technologies</button></li>
+                <li><button class="dropdown-item" type="button">Education</button></li>
+                <li><button class="dropdown-item" type="button">Bio</button></li>
+                <li><button class="dropdown-item" type="button">Experience</button></li>
+                <li><button class="dropdown-item" type="button">Projects</button></li>
+                <li><button class="dropdown-item" type="button">Contact</button></li>
+
+            </ul>
+        </div>
+        <div class="sidebar s-1 L-1">
+            <div class="prof">
+                <img src="images/prof2.png" alt="profile picture">
+                <h3>Dan Wartsbaugh</h3>
+                <h5>Full Stack Developer</h5>
+            </div>
+            <ul class="links">
+                <li>About Me</li>
+                <li>Technologies</li>
+                <li>Education</li>
+                <li>Bio</li>
+                <li>Experience</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+            <div class="icons"></div>
+        </div>
+
+        <main class="s-1 m-2 L-3">
+            <!-- About me: Image, heading, text. -->
+            <div class="about">
+                <h3>About Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eaque delectus tempore tempora
+                    officiis placeat praesentium inventore dolores voluptas</p>
+            </div>
+
+            <!-- Techs: One bar, multiple icons -->
+            <div class="techs">
+                <img src="images/lang-icons.png" alt="language icons">
+            </div>
+
+            <!-- Education: Heading, three entries -->
+            <div class="edu">
+                <h3>Education</h3>
+                <div class="school">
+                    <h5>2023: Coding Dojo</h5>
+                    <p>HTML, JavaScript, CSS</p>
+                </div>
+                <div class="school">
+                    <h5>2021: Pillar Seminary</h5>
+                    <p>M.A. Contextual Leadership</p>
+                </div>
+                <div class="school">
+                    <h5>2006: Trinity International University</h5>
+                    <p>B.A. Mathematics, Biblical Studies, History, Philosophy</p>
+                </div>
+            </div>
+
+            <!-- Bio: Heading, paragraph -->
+            <div class="bio">
+                <h3>Bio</h3>
+                <p></p>
+            </div>
+
+            <!-- Experience: Heading, paragraph (unordered list?)-->
+            <div class="exp">
+                <h3>Experience</h3>
+                <ul></ul>
+            </div>
+
+            <!-- Projects: Heading, 2 project divs for screenshot and paragraph -->
+            <div class="projects">
+                <h3>Projects</h3>
+                <div class="proj">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="proj">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+
+            </div>
+
+            <!-- Contact: Inputs for Name, Email, and Message. recaptcha (not a robot) -->
+            <div class="contact">
+                <h3>Contact Me</h3>
+                <div class="contact-sections">
+                <div class="contact-left">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text">
+            </div>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+        </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
