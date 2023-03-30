@@ -2,15 +2,19 @@
     margin:0;
     padding:0;
 }
-body{    background-color:rgb(237,234,229);
+
+body{
+    background-color:rgb(101,126,130);
     margin:0 auto;
 }
+/*Contains the sidebar on the left and the main area on the right*/
 .all{
-    background-color:rgb(227,224,219);
+    background-color:rgb(201,201,201);
     margin:0 auto;
     text-align:center;
     width:90%;
 }
+
 /*Screen size adjustments*/
 
 /*small screen*/
@@ -29,7 +33,6 @@ body{    background-color:rgb(237,234,229);
     }
     .proj p{
         width:90%;
-        /* height:fit-content; */
     }
 
     .proj img{
@@ -48,7 +51,6 @@ body{    background-color:rgb(237,234,229);
 .all{
     display:flex;
     align-items:stretch;
-    /* justify-content: */
 }
 
 .dropdown{
@@ -86,10 +88,9 @@ body{    background-color:rgb(237,234,229);
 }
 
 /*END SCREEN SIZE ADJUSTMENT PORTION*/
-#main *{
-    margin:10px 5px;
-    padding:0px 5px;
-}
+
+
+/*dropdown menu that appears on small screen only*/
 .dropdown{
     position:fixed;
     top:8px;
@@ -97,16 +98,12 @@ body{    background-color:rgb(237,234,229);
     z-index: 3;
 }
 
-.sidebar{
-    /* background-color:yellow; */
-}
-
-
-
+/*profile section*/
 .prof{
     padding-top:20%;
 }
 
+/*profile image*/
 .prof img{
     margin-top:10%;
     margin-bottom:8%;
@@ -114,10 +111,7 @@ body{    background-color:rgb(237,234,229);
     border-radius:50%;
 }
 
-h3{}
-
-h4{}
-
+/*link section on left sidebar*/
 .links{
     margin-top:20%;
     margin-left:0 px;
@@ -126,13 +120,13 @@ h4{}
     font-weight:600;
 }
 
+/*individual links*/
 .links a{
     text-decoration:none;
     color:black;
 }
 
-
-
+/*social media icons*/
 .icons{
     margin-top:5px;
     display:flex;
@@ -140,35 +134,41 @@ h4{}
     height:30px;
 }
 
+/*icon button style*/
 .icons button{
     border-style:none;
-    background-color:rgb(227,224,219);
+    background-color:rgb(201,201,201);
 }
 
+/*positioning for main area itself*/
 main{
     margin-left:0px;
     padding-left:0px;
 }
 
+/*for the things inside the main area on the right*/
+#main *{
+    margin:10px 5px;
+    padding:0px 5px;
+}
+
+/*for the sake of the text box below*/
 .about{
     display:flex;
     position:relative;
 }
 
-main *{
-    margin-left:0px;
-    padding-left:0px;
-}
-
+/*big cover image at the top of the page*/
 #about img{
     margin:0px;
     padding:0px;
     width:100%;
 }
 
+/*text box overlaying the above image*/
 .about-text{
     margin-left:0px;
-    background-color:rgb(237,234,229,.7);
+    background-color:rgb(201,201,201,.7);
     position:absolute;
     right:20px;
     bottom:20px;
@@ -179,107 +179,130 @@ main *{
     justify-content:center;
 }
 
+/*text within that box*/
 .about-text p{
     font-weight:600;
     margin-bottom:0;
 }
 
-.techs{
-    margin-top:5%;
-    background-color:rgb(190,190,180,.6);
+/*space between about section and next one*/
+#inter-top{
     height:200px;
 }
 
+/*bar of techs I know*/
+.techs{
+    margin-top:5%;
+    border-radius:5px;
+    background-color:rgb(192,174,164);
+    height:200px;
+}
+
+/*individual techs displayed on the bar*/
 .techs img{
     width:200px;
 }
 
-.edu{
+/*area for education*/
+#education{
     margin-top:5%;
-    background-color:rgb(237,234,229,.5);
+    background-color:rgb(120,173,129);
     border-radius:5px;
     padding-bottom:5px;
+    margin-bottom:150px;
 }
 
+/*each school listed in the education area*/
 .school{
     text-align:left;
 }
 
+/*empty blocks between sections*/
 .inter{
-    height:250px;
+    height:400px;
+    border-radius:5px;
     background-attachment:fixed;
     background-position:center;
     background-repeat:no-repeat;
     background-size:contain;
 }
 
+/*block before bio*/
 #inter-bio{
-    background-image: url("images/bison-cropped.png");
+    background-image: url("images/mountain-landscape-2031539_960_720.jpg");
 
 }
 
+/*block before projects*/
 #inter-projects{
-    background-image: url("images/monkey-cropped.png");
+    background-image: url("images/tree-247122_960_720.jpg");
 }
 
+/*block before contact*/
 #inter-contact{
-    background-image: url("images/ice-cropped.png");
+    background-image: url("images/bridge-192982_960_720.jpg");
 }
 
-.bio-exp{
+/*container for bio and experience*/
+#bio-exp{
+    border-radius:5px;
+    margin:150px 0px;
     height:600px;
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
 }
-.bio{
-    background-color:rgb(237,234,229,.5);
 
+/*area for bio*/
+.bio{
+    background-color:rgb(192,174,164);
+    border-radius:5px;
     margin-top:5%;
     height:fit-content;
-    /* padding-bottom:120px; */
-
 }
-.bio h3{}
+
+/*text of the bio*/
 .bio p{
     text-align:left;
     font-weight:600;
 }
 
+/*experience and skills area*/
 #experience{
-    background-color:rgb(190,190,180,.6);
+    background-color:rgb(108,135,142);
+    border-radius:5px;
     height:fit-content;
     padding-bottom:5px;
 }
-.exp h3{
-    /* background-color:rgb(190,190,180,.6); */
-}
 
+/*list of individual skills*/
 #exp-list{
-    /* background-color:rgb(190,190,180,.6); */
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
     margin:0;
     padding:0;
 }
+
+/*each item on the above list*/
 #exp-list li{
     width:26%;
-    /* text-align:left; */
     font-weight:600;
     font-size:100%;
-    margin:0;
+    margin-bottom:10px;
     padding:0;
     list-style-type:none;
 }
 
+/*area for projects*/
 #projects{
-    margin-top:5%;
-    background-color:rgb(190,190,180,.6);
+    margin:150px 0px;
+    background-color:rgb(120,173,129);
+    border-radius:5px;
     padding-bottom:5px;
-    /* background-color:brown */
 }
 
+/*individual project*/
 .proj{
     padding:10px;
     display:flex;
@@ -287,20 +310,22 @@ main *{
     margin-bottom:10px;
 }
 
-
-.proj p{
-    background-color:rgb(190,190,180,.6);
-    /* width:25%; */
-    margin:0px;
+/*text description of project*/
+#projects p{
+    background-color:rgb(201,201,201);
+    padding-top:5px;
+    text-align:left;
 }
 
+/*contact area*/
 .contact{
     margin-top:10%;
-    background-color:rgb(237,234,229,.5);
+    background-color:rgb(108,135,142);
     border-radius:5px;
     height:280px;
 }
 
+/*form area*/
 .contact-sections{
     height:240px;
     display:flex;
@@ -308,15 +333,16 @@ main *{
     align-items:space-around;
 }
 
+/*left side of contact form*/
 .contact-left{
     height:140px;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     margin-top:10px;
-    /* margin-bottom:10px; */
 }
 
+/*send button*/
 #send{
     border:1px solid gray;
     width:140px;
@@ -325,6 +351,7 @@ main *{
     margin-left:0px;
 }
 
+/*message text area*/
 #message{
     width:60%;
     height:200px;
@@ -332,10 +359,7 @@ main *{
     margin-bottom:10px;
 }
 
-text{}
-
-textarea{}
-
+/*bottom filler div*/
 .filler{
-    height:350px;
+    height:420px;
 }

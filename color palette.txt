@@ -1,0 +1,5 @@
+light blue: rgb(108,135,142)
+dark blue: rgb(101,126,130)
+pink: rgb(192,174,164)
+gray: rgb(201,201,201)
+green: rgb(120,173,129)
