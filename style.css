@@ -135,9 +135,10 @@ body{
 }
 
 /*icon button style*/
-.icons button{
+.icons button, a{
     border-style:none;
     background-color:rgb(201,201,201);
+    color:black;
 }
 
 /*positioning for main area itself*/
