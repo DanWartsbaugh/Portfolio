@@ -4,12 +4,14 @@
 }
 
 body{
-    background-color:rgb(101,126,130);
+    background-color:rgb(88, 107, 110);
+    /* background-color:rgb(101,126,130); */
     margin:0 auto;
 }
 /*Contains the sidebar on the left and the main area on the right*/
 .all{
-    background-color:rgb(201,201,201);
+    /* background-color:rgb(201,201,201); */
+    background-color:rgb(224, 221, 221);
     margin:0 auto;
     text-align:center;
     width:90%;
@@ -137,7 +139,7 @@ body{
 /*icon button style*/
 .icons button, a{
     border-style:none;
-    background-color:rgb(201,201,201);
+    background-color:rgb(224,221,221);
     color:black;
 }
 
@@ -195,7 +197,8 @@ main{
 .techs{
     margin-top:5%;
     border-radius:5px;
-    background-color:rgb(192,174,164);
+    /* background-color:rgb(192, 167, 164); */
+    background-color:rgb(227, 134, 123);
     height:200px;
 }
 
@@ -256,7 +259,7 @@ main{
 
 /*area for bio*/
 .bio{
-    background-color:rgb(192,174,164);
+    background-color:rgb(227, 134, 123);
     border-radius:5px;
     margin-top:5%;
     height:fit-content;
@@ -313,9 +316,20 @@ main{
 
 /*text description of project*/
 #projects p{
-    background-color:rgb(201,201,201);
+    background-color:rgb(224,221,221);
     padding-top:5px;
     text-align:left;
+    display:flex;
+    flex-direction:column;
+}
+
+#projects b{
+    text-align:center
+}
+
+#projects span{
+    text-align:center
+    
 }
 
 /*contact area*/
