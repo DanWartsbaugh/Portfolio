@@ -27,18 +27,16 @@
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg> </button>
             <ul class="dropdown-menu">
-                <li><button onclick="window.location.href='#about'" class="dropdown-item" type="button">About
-                        Me</button></li>
                 <li><button onclick="window.location.href='#techs'" class="dropdown-item"
                         type="button">Technologies</button></li>
-                <li><button onclick="window.location.href='#education'" class="dropdown-item"
-                        type="button">Education</button></li>
+                <li><button onclick="window.location.href='#projects'" class="dropdown-item"
+                        type="button">Projects</button></li>
                 <li><button onclick="window.location.href='#bio'" class="dropdown-item" type="button">Bio</button>
                 </li>
                 <li><button onclick="window.location.href='#experience'" class="dropdown-item"
                         type="button">Experience</button></li>
-                <li><button onclick="window.location.href='#projects'" class="dropdown-item"
-                        type="button">Projects</button></li>
+                <li><button onclick="window.location.href='#education'" class="dropdown-item"
+                        type="button">Education</button></li>
                 <!-- <li><button onclick="window.location.href='#contact'" class="dropdown-item"
                             type="button">Contact</button></li> -->
             </ul>
@@ -54,18 +52,17 @@
 
             <!-- Navigation links -->
             <ul class="links">
-                <li><a href="#about" onmouseover="changeColor(this)" onmouseout="changeBack(this)">About Me</a></li>
                 <li><a href="#techs" onmouseover="changeColor(this)" onmouseout="changeBack(this)">Technologies</a>
                 </li>
-                <li><a href="#education" onmouseover="changeColor(this)" onmouseout="changeBack(this)">Education</a>
+                <li><a href="#projects" onmouseover="changeColor(this)" onmouseout="changeBack(this)">Projects</a>
                 </li>
                 <li><a href="#bio" onmouseover="changeColor(this)" onmouseout="changeBack(this)">Bio</a></li>
                 <li><a href="#experience" onmouseover="changeColor(this)" onmouseout="changeBack(this)">Experience</a>
                 </li>
-                <li><a href="#projects" onmouseover="changeColor(this)" onmouseout="changeBack(this)">Projects</a>
+                <li><a href="#education" onmouseover="changeColor(this)" onmouseout="changeBack(this)">Education</a>
                 </li>
-                <!-- <li><a href="#contact" onmouseover="changeColor(this)" onmouseout="changeBack(this)">Contact</a> -->
-                </li>
+                <!-- <li><a href="#contact" onmouseover="changeColor(this)" onmouseout="changeBack(this)">Contact</a> </li>-->
+
             </ul>
 
             <!-- Div for social icons -->
@@ -99,25 +96,129 @@
             <div class="about" id="about">
                 <img src="fog.jpg" alt="image of fog over dunes">
                 <div class="about-text">
-                    <h3>About Me</h3>
-                    <p>I am a new professional coder with plenty of real-world experience.</p>
+                    <p>"To [code] will be an awfully big adventure." <br><i>-J.M. Barrie (paraphrase)</i></p>
                 </div>
             </div>
             <div class="inter" id="inter-top"></div>
 
             <!-- Techs: One bar, multiple icons -->
             <div class="techs" id="techs">
-                <img src="csharp.png" alt="C#">
-                <img src="aspdotnet.png" alt="ASP.NET">
-                <img src="mysql-logo.png" alt="MySQL">
-                <img src="python.png" alt="Python">
-                <img src="flask-logo.png" alt="Flask">
-                <img src="React-icon.png" alt="React">
-                <img src="expressjs.png" alt="Express">
-                <img src="mongodb.png" alt="MongoDB">
-                <img src="lang-icons.png" alt="HTML5, JavaScript, CSS">
+                <h3 style="border-bottom:solid rgb(224, 221, 221) 1px; padding-bottom:10px">Technologies</h3>
+
+                <div style="border-bottom:solid rgb(224,221,221) 1px; padding-bottom:5px">
+                    <img src="csharp.png" alt="C#">
+                    <img src="aspdotnet.png" alt="ASP.NET">
+                    <img src="mysql-logo.png" alt="MySQL">
+                    <img src="python.png" alt="Python">
+                    <img src="flask-logo.png" alt="Flask">
+                    <img src="React-icon.png" alt="React">
+                    <img src="expressjs.png" alt="Express">
+                    <img src="mongodb.png" alt="MongoDB">
+                    <img src="lang-icons.png" alt="HTML5, JavaScript, CSS" style="height:130px;width:auto">
+                </div>
+                <div style="padding-bottom:10px;display:flex;flex-wrap:wrap;justify-content:center">
+                    <p><b>Languages:</b> C#, Python, JavaScript, HTML5, CSS</p>
+                    <p><b>Frameworks & Libraries:</b> ASP.NET, React, Express, Flask, MaterialUI</p>
+                    <p><b>Databases:</b> MySQL, MongoDB</p>
+                    <p><b>Tools:</b> Node.js, bcrypt, Amazon EC2 and S3, trello</p>
+                </div>
+            </div>
+
+            <!-- Projects: Heading, 2 project divs for screenshot and paragraph -->
+            <div class="projects" id="projects">
+                <h3 style="border-bottom:solid rgb(224, 221, 221) 1px;padding-bottom:10px">Projects</h3>
+                <div class="proj" style="border-bottom:solid rgb(224, 221, 221) 1px;padding-bottom:5px">
+                    <img src="Shop.png" alt="Saint Barnabas House shop">
+                    <p><b>Saint Barnabas House</b><br>
+                        A site designed for a not-for-profit organization with heavy community involvement. The site
+                        includes a shop, blog, and event scheduler.<br>
+                        <i>C#, ASP.NET, Entity framework, MySQL</i>
+                        <span><a href="https://github.com/DanWartsbaugh/SaintBarnabasHouse" target="_blank">
+                                github</a> |
+                            <a href="http://ec2-13-59-252-251.us-east-2.compute.amazonaws.com"
+                                target="_blank">live</a></span>
+                    </p>
+                </div>
+
+                <div class="proj">
+                    <p><b>Country Kitchen</b><br>
+                        A recipe blog showcasing some of my favorite family recipes<br>
+                        <i>React, Node.js, Express, MongoDB</i>
+                        <span><a href="https://github.com/Zach5812/countryKitchen" target="_blank">
+                                github</a>
+                    </p>
+                    <img src="Filtered.png" alt="Country Kitchen display page">
+                </div>
 
             </div>
+
+            <div class="inter" id="inter-bio">
+            </div>
+            <!-- Bio: Heading, paragraph -->
+            <div class="bio-exp" id="bio-exp">
+                <div class="bio" id="bio">
+                    <h3>Bio</h3>
+                    <p>After completing a coding bootcamp, I have gained proficiency in three full stacks. I am now
+                        ready to bring my skills in C#/ASP.Net, MERN, and Python out into the real world.<br><br>
+                        <b style="margin-left:0;padding:0"><i style="margin-left:0;padding:0">Why Coding?</i></b><br>
+                        I got my first job as a dish washer in high school. 25 years later I have worked as a retail
+                        clerk, a security guard, a landscaper, a field technician, a teacher, a writer, and an data
+                        entry clerk meets account specialist. In every one of these jobs I found a common thread:<b>they
+                            all had problems to solve.</b><br><br>
+                        In my adult life I've found joy in hobbies such as baking, gardening, knitting, and
+                        woodworking.<br><br>
+                        Coding allows me to bring the problem-solving skills I've honed in my professional life and
+                        marry them to the precision, patience, and attention to detail I've sharpened in my
+                        hobbies.<br><br>
+                        <b style="margin-left:0;padding:0"><i
+                                style="margin-left:0;padding:0">Accomplishments</i></b><br>
+                        Several years ago I had an opportunity to teach. Some of my students wanted books that would
+                        provide what the classes had offered. I had never written a book and I had certainly never
+                        published one, but at their request I set about the work. I searched out resources that would
+                        teach me how to format a book for printing, I shopped for a printer, and I distributed the
+                        books. The first was received so well that they asked me to do it twice more, so I complied.
+                        Each book was a little better, a little prettier, and a little easier to read than the previous
+                        one.<i>I learned what I needed to do and kept trying to improve my processes.</i><br><br>
+                        As a data entry clerk I was handed a set of accounts that no one wanted to touch. They were too
+                        complicated, they had too many special rules, and the locations responsible for servicing the
+                        accounts had a reputation for being difficult to work with. Going into it, I had no idea of
+                        their reputation or that the accounts represented roughly 10% of the nationwide company's
+                        volume. I accepted those accounts, took about a week to learn the special rules that had been
+                        confounding my coworkers for months, and developed processes to handle their accounts with
+                        exceptional efficiency. (As a basis of comparison, the next largest set of accounts represented
+                        about 5% of the company's volume and it needed two people to barely stay on top of it.) Not only
+                        that, but I also built relationships with those "hard to work with" locations so that by the
+                        time I left they were not only among the most reliable locations in the company, but they were
+                        glad to hear from me when my office called.<i>I saw the job that needed to be done and I made it
+                            work exceptionally well.</i><br><br>
+                        <b style="margin-left:0;padding:0"><i style="margin-left:0;padding:0">My Work
+                                Philosophy</i></b><br>
+                        I always try to work to the best of my ability. I always try to get better at what I do, even if
+                        what I am doing is just washing a dirty pan. If I don't know how to do something, I learn how to
+                        do it. If I can't find the answers on my own, I ask for help. If a co-worker or employer has
+                        feedback on the work I'm doing, I treat it as an opportunity to improve. I take my work far more
+                        seriously than I take myself.
+
+                    </p>
+                </div>
+            </div>
+            <div class="inter" id="inter-projects"></div>
+
+            <!-- Experience: Heading, paragraph (unordered list?)-->
+            <div class="exp" id="experience" style="margin-top:40px">
+                <h3>Skills and Experience</h3>
+                <ul id="exp-list">
+                    <li>Real-world problem solving</li>
+                    <li>Communication skills</li>
+                    <li>Work experience in a wide variety of fields</li>
+                    <li>Leadership experience</li>
+                    <li>Analytical skills</li>
+                    <li>Organizational skills</li>
+                    <li>Writing skills (I have written three books)</li>
+                    <li>Passion for learning</li>
+                </ul>
+            </div>
+
 
             <!-- Education: Heading, three entries -->
             <div class="edu" id="education">
@@ -135,64 +236,7 @@
                     <p>B.A. Mathematics, Biblical Studies, History, Philosophy</p>
                 </div>
             </div>
-            <div class="inter" id="inter-bio">
-            </div>
-            <!-- Bio: Heading, paragraph -->
-            <div class="bio-exp" id="bio-exp">
-                <div class="bio" id="bio">
-                    <h3>Bio</h3>
-                    <p>For years I worked jobs to pay the bills while I addressed life's more important questions.
-                        All
-                        of
-                        these jobs revealed two deep passions: learning new things and a desire to solve problems. I
-                        have settled on coding as a
-                        career because it provides opportunities to learn new skills and to find and solve problems,
-                        large and small, every
-                        single
-                        day.</p>
-                </div>
-                <!-- Experience: Heading, paragraph (unordered list?)-->
-                <div class="exp" id="experience">
-                    <h3>Skills and Experience</h3>
-                    <ul id="exp-list">
-                        <li>Real-world problem solving</li>
-                        <li>Communication skills</li>
-                        <li>Work experience in a wide variety of fields</li>
-                        <li>Leadership experience</li>
-                        <li>Analytical skills</li>
-                        <li>Organizational skills</li>
-                        <li>Writing skills (I have written three books)</li>
-                        <li>Passion for learning</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="inter" id="inter-projects"></div>
 
-            <!-- Projects: Heading, 2 project divs for screenshot and paragraph -->
-            <div class="projects" id="projects">
-                <h3 style="border-bottom:solid rgb(224, 221, 221) 1px;padding-bottom:5px">Projects</h3>
-                <div class="proj" style="border-bottom:solid rgb(224, 221, 221) 1px;padding-bottom:5px">
-                    <img src="Shop.png" alt="Saint Barnabas House shop">
-                    <p><b>Saint Barnabas House</b><br>
-                        A site designed for a not-for-profit organization with heavy community involvement. The site includes a shop, blog, and event scheduler.<br>
-                        <i>C#, ASP.NET, Entity framework, MySQL</i>
-                        <span><a href="https://github.com/DanWartsbaugh/SaintBarnabasHouse" target="_blank">
-                            github</a> |
-                            <a href="http://ec2-13-59-252-251.us-east-2.compute.amazonaws.com" target="_blank">live</a></span>
-                    </p>
-                </div>
-                
-                <div class="proj">
-                    <p><b>Country Kitchen</b><br>
-                        A recipe blog showcasing some of my favorite family recipes<br>
-                        <i>React, Node.js, Express, MongoDB</i>
-                        <span><a href="https://github.com/Zach5812/countryKitchen" target="_blank">
-                            github</a>
-                    </p>
-                    <img src="Filtered.png" alt="Country Kitchen display page">
-                </div>
-
-            </div>
             <div class="inter" id="inter-contact"></div>
 
             <!-- Contact: Inputs for Name, Email, and Message. -->
