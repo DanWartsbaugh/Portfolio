@@ -58,6 +58,16 @@ body{
         height:fit-content;
         margin-bottom:5%
     }
+
+    #techs .img-holder{
+        width:100px;
+        height:100px;
+    }
+
+    #techs img{
+        max-width:90px;
+        max-height:90px
+    }
 }
 
 /*medium screen*/
@@ -221,8 +231,21 @@ main{
 
 
 /*individual techs displayed on the bar*/
+.img-holder{
+    padding:0px;
+    width:125px; 
+    height:125px;
+    background-color:white;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .techs img{
-    width:150px;
+    margin:0px;
+    padding:0px;
+    max-width:110px;
+    max-height:110px
 }
 
 /*area for education*/
@@ -251,18 +274,18 @@ main{
 
 /*block before bio*/
 #inter-bio{
-    background-image: url("mountain-landscape-2031539_960_720.jpg");
+    background-image: url("mountain-landscape.jpg");
 
 }
 
 /*block before projects*/
 #inter-projects{
-    background-image: url("tree-247122_960_720.jpg");
+    background-image: url("tree.jpg");
 }
 
 /*block before contact*/
 #inter-contact{
-    background-image: url("bridge-192982_960_720.jpg");
+    background-image: url("bridge.jpg");
 }
 
 /*container for bio and experience*/
