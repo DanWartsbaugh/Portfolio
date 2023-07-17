@@ -301,7 +301,7 @@ main{
 
 /*area for bio*/
 .bio{
-    background-color:rgb(108,135,142);
+    background-color:rgb(108, 135, 142);
     border-radius:5px;
     padding:10px 0px;
     /* margin-top:5%; */
@@ -344,7 +344,7 @@ main{
 /*area for projects*/
 #projects{
     margin:50px 0px;
-    background-color:rgb(120,173,129);
+    background-color:#78ad81;
     border-radius:5px;
     padding:10px 0px;
 }
